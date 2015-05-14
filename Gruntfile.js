@@ -10,7 +10,7 @@ module.exports = function (grunt) {
       }
     },
     watch: {
-      files: ['Gruntfile.js', 'package.json', 'tests/*.js'],
+      files: ['Gruntfile.js', 'package.json', 'tests/*.js', 'src/*.js'],
       tasks: ['jshint', 'mochaTest']
     },
     mochaTest: {
