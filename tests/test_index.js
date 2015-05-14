@@ -1,4 +1,5 @@
 var should = require('chai').should();
+// var sourceCode = require('../src/sourceCode');
 
 describe('Array', function() {
   describe('#indexOf()', function() {
@@ -6,4 +7,4 @@ describe('Array', function() {
       [1, 2, 3].indexOf(2).should.equal(1);
     });
   });
-})
+});
