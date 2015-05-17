@@ -10,14 +10,14 @@ module.exports = function (grunt) {
       }
     },
     watch: {
-      files: ['Gruntfile.js', 'package.json', 'tests/*.js', 'src/*.js'],
+      files: ['Gruntfile.js', 'package.json'],
       tasks: ['jshint', 'mochaTest'],
       options: {
         atBegin: true
       }
     },
     mochaTest: {
-      src: ['tests/*.js']
+      src: []
     }
   });
 
