@@ -9,8 +9,8 @@
 Add the following function to your .bash_profile and you can generate a test suite from command line
 with the command 'mktest'
 
-function mktest() {
-  wget https://raw.githubusercontent.com/eihli/test-skeleton/master/Gruntfile.js
-  wget https://raw.githubusercontent.com/eihli/test-skeleton/master/package.json
-  npm install    
-}
+    function mktest() {
+      wget https://raw.githubusercontent.com/eihli/test-skeleton/master/Gruntfile.js
+      wget https://raw.githubusercontent.com/eihli/test-skeleton/master/package.json
+      npm install    
+    }
