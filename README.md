@@ -14,3 +14,8 @@ with the command 'mktest'
       wget https://raw.githubusercontent.com/eihli/test-skeleton/master/package.json
       npm install    
     }
+
+After running mktest, run 'grunt watch' and go edit the Gruntfile to add whatever files
+you want it to monitor for changes.
+
+For details about what everything does in the gruntfile: http://gruntjs.com/sample-gruntfile
