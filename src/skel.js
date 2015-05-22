@@ -13,9 +13,9 @@ var helperFunctionToCapitalizeAString = function(string) {
 
 module.exports.getName = function() {
   return "Skel";
-}
+};
 
 
 module.exports.getCapitalizedName = function() {
   return helperFunctionToCapitalizeAString(exports.getName());
-}
+};
