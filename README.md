@@ -2,16 +2,22 @@
 
 ### How to use
 
+##### If you are setting up a new project in a folder that is not yet a git repo
+
 - git clone this repo
 - npm install
 - grunt watch
 
+##### If you want to add a testing skeleton to a folder that is already a git repo
+
 Add the following function to your .bash_profile and you can generate a test skeleton from command line
-with the command 'mktest'
+with the command 'mktest'. This code will download the repo as a .zip file, extract it to the current directory without creating a git repo, then delete the temporary zip file.
 
     function mktest() {
-      wget https://raw.githubusercontent.com/eihli/test-skeleton/master/Gruntfile.js
-      wget https://raw.githubusercontent.com/eihli/test-skeleton/master/package.json
+      wget https://github.com/eihli/test-skeleton/archive/master.zip -O temp.zip
+      unzip temp.zip -d ./
+      mv ./test-skeleton-master/* ./
+      rm -r ./test-skeleton-master temp.zip
       npm install    
     }
 
