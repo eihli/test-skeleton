@@ -4,7 +4,11 @@
 
 ##### If you are setting up a new project in a folder that is not yet a git repo
 
-- git clone this repo
+- [Set up an empty GitHub repo.](https://help.github.com/articles/create-a-repo/)
+- ``git clone https://github.com/eihli/test-skeleton.git``
+- ``cd test-skeleton``
+- ``git remote set-url origin <your github project repo>``
+- ``git remote add origin <your github repo>``
 - npm install
 - grunt watch
 
@@ -21,7 +25,6 @@ with the command 'mktest'. This code will download the repo as a .zip file, extr
       npm install    
     }
 
-After running mktest, run 'grunt watch' and go edit the Gruntfile to add whatever files
-you want it to monitor for changes.
+After running mktest, run 'grunt watch' and go edit the Gruntfile to add whatever files you want it to monitor for changes.
 
 For details about what everything does in the gruntfile: http://gruntjs.com/sample-gruntfile

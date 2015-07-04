@@ -1,6 +1,6 @@
 {
   "name": "eihli-test-skeleton",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "author": {
     "name": "Eric Ihli"
   },
@@ -13,6 +13,5 @@
     "mocha": "^2.2.4"
   },
   "dependencies": {
-    "chai": "^2.3.0"
   }
 }
