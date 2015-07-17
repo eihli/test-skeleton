@@ -10,6 +10,10 @@ module.exports = function (grunt) {
       options: {
         curly: true,
         eqeqeq: true,
+        // This ignores is something on the backend.
+        // I use an example.js file as a template but you'll
+        // never see it because I delete it.
+        ignores: ['**/*/example.js']
       }
     },
 
