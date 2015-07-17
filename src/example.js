@@ -9,13 +9,19 @@ var helperFunctionToCapitalizeAString = function(string) {
 // We'll have access to it in any file that has the following at the top
 // var moduleName = require('modulePath/moduleName');
 // or
-// var skel = require('../src/skel.js'); In this example
+// var Example = require('../src/example.js'); In this example
+var ExampleModule = function() {
 
-module.exports.getName = function() {
-  return "Skel";
+  this.name = 'Example Module Name',
+
+  getName: function() {
+    return this.name;
+  },
+
+  getCapitalizeName: function() {
+    return helperFunctionToCapitalizeAString(this.name);
+  }
+
 };
 
-
-module.exports.getCapitalizedName = function() {
-  return helperFunctionToCapitalizeAString(exports.getName());
-};
+module.exports = ExampleModule();
