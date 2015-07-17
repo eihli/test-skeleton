@@ -12,15 +12,15 @@ var helperFunctionToCapitalizeAString = function(string) {
 // var Example = require('../src/example.js'); In this example
 var ExampleModule = function() {
 
-  this.name = 'Example Module Name',
+  this.name = 'Example Module Name';
 
-  getName: function() {
+  this.getName = function() {
     return this.name;
-  },
+  };
 
-  getCapitalizeName: function() {
+  this.getCapitalizeName = function() {
     return helperFunctionToCapitalizeAString(this.name);
-  }
+  };
 
 };
 
